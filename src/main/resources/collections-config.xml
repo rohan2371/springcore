@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+
+
+    <bean class="com.springcore.collections.Emp" name="emp1">
+        <property name="name" value="Shubham gill"/>
+        <property name="phone">
+            <list>
+                <value>8626081983</value>
+                <value>7841937423</value>
+                <value>9890144022</value>
+            </list>
+        </property>
+
+        <property name="address">
+            <set>
+                <value>Mumbai</value>
+                <value>Solapur</value>
+                <value>Pune</value>
+            </set>
+        </property>
+        <property name="courses">
+            <map>
+                <entry key="java" value="2month"/>
+                <entry key="cpp" value="1month"/>
+                <entry key="React js" value="3month"/>
+            </map>
+        </property>
+        <property name="properties">
+            <props>
+                <prop key="name">Rohan Konkatti</prop>
+                <prop key="age">22</prop>
+            </props>
+        </property>
+    </bean>
+</beans>
